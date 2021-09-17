@@ -1,0 +1,84 @@
+/* Navigation bar Styling */
+#navbar{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#navbar a{
+    padding: 0px 9px;
+}
+#logo img{
+    /* display: inline; */
+    justify-content: first baseline;
+}
+/* Home Section Styling */
+#home{
+    padding: 17px 14px;
+    padding-top: 51px;
+    padding-bottom: 41px;
+}
+#home::before{
+    height: 432px;
+}
+#home h1{
+    font-size: 26px;
+}
+#home p{
+    font-size: 15px;
+}
+#home button{
+    width: 102px;
+    height: 29px;
+    font-size: 0.9rem;  
+}
+/* Services Styling */
+.services{
+    
+    font-size: 36px;
+}
+#ourServices{
+    flex-direction: column;
+}
+#FoodOrdering h2{
+    font-size: 21px;
+}
+#FoodCatering h2{
+    font-size: 21px;
+}
+#BulkOrdering h2{
+    font-size: 21px;
+}
+/* Styling for Our Clients */
+.logos{
+    padding: 0px;
+    margin: 10px;
+}
+#logos{
+    flex-direction: column;
+}
+#client-section h1{
+    font-size: 36px;
+}
+.logos img{
+    width: 70px;
+}
+#apple{
+    width: 48px;
+}
+#microsoft{
+    width: 80px;
+}
+#hp{
+    width: 48px;
+}
+#skype{
+    width: 88px;
+}
+/* Styling for Contact-Us */
+#contact h1{
+    font-size: 26px;
+}
+#contact-form form{
+    width: 70%;
+}
+/* Footer Styling */

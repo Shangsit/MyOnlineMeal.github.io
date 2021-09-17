@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar Styling */
+#navbar{
+
+    /* border: 2px solid red; */
+    display: flex; /*important*/
+    align-items: center; 
+    /* width: 100%; */
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;    /*did not understood this part */
+    top: 0px;     
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar a{
+    /* margin: 5px 8px;*/
+    padding: 10px 24px; 
+    color: white;
+    font-size: large; 
+    text-decoration: none;
+    /* background-color: red; */
+}
+#navbar a:hover{
+    color: black;
+    background-color: white;
+}
+#logo{
+    display: inline;   
+}
+#logo img{
+    border-radius: 36px;
+    padding: 10px 24px; 
+    /* margin: 10px 45px; */
+}
+/* Home Section Styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 244px;
+    padding: 80px 100px;
+    padding-bottom: 61px;
+}
+#home::before{
+    content: "";
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;     
+    left: 0px;
+    width: 100%;
+    height: 456px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1{
+    color: white;
+    font-size:50px;
+    text-align: center;
+}
+#home p{
+    color: white;
+    font-size:1.5rem;
+    text-align: center;
+}
+
+#home button{
+    width: 118px;
+    height: 41px;
+    border: 2px solid white;
+    border-radius: 13px;
+    background: #a10000;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    
+}
+#home button:hover{
+    width: 118px;
+    height: 41px;
+    border: 2px solid #a10000;
+    border-radius: 13px;
+    background: white;
+    color: #a10000;
+    font-size: 1.1rem;
+    cursor: pointer;
+    
+}
+
+.body{
+    padding: 20px 20px;
+}
+
+/* Services Styling */
+.services{
+    text-align: center;
+    font-size: 60px;
+}
+#ourServices{
+    display: flex;
+    text-align: center;
+    position: relative;
+    padding: 10px 10px;
+    z-index: -1;
+}
+#FoodOrdering{
+    border: 2px solid brown;
+    height: 400px;  
+    box-sizing: border-box;
+    padding: 27px 20px;
+    margin: 10px 10px;  
+    border-radius: 10px;
+    background-color: rgb(255, 213, 158);
+}
+#FoodCatering{
+    border: 2px solid brown;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 213, 158);
+}
+#BulkOrdering{
+    border: 2px solid brown;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 213, 158);
+}
+#FoodOrdering h2{
+    font-size: 30px;
+}
+#FoodCatering h2{
+    font-size: 30px;
+}
+#BulkOrdering h2{
+    font-size: 30px;
+}
+/* Styling for Our Clients */
+#client-section{
+    font-size: 40px;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+}
+#client-section::before{
+    content: "";
+    background: url(../bg2.jpg) no-repeat center center/cover;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: 0.3;
+}
+#logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logos{
+    padding: 0px;
+    margin: 40px;
+}
+.center{
+    text-align: center;
+    /* font-size: 40px; */
+}
+/* Styling for Contact-Us */
+ #contact{
+    height: 500px;
+}
+#contact::before{
+    content: "";
+    background: url(../contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.5;
+}
+.contact{
+    font-size: 50px;
+}
+#contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-form label{
+    left: 0px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+#contact-form input,
+#contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    /* height: 100%; */
+} 
+#contact-form form{
+    width: 40%;
+}
+
+/* Footer Styling */
+footer{
+    bottom: 0px;
+    /* width: 100%; */
+    background-color: black;
+    color: white;
+    padding: 9px 18px;
+}
