@@ -34,16 +34,43 @@ html{
     list-style: none;
 }
 #navbar a{
-    /* margin: 5px 8px;*/
+    
     padding: 10px 24px; 
     color: white;
     font-size: large; 
     text-decoration: none;
-    /* background-color: red; */
+    animation-name: ahovereverse;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes ahovereverse{
+    from{
+        color: black;
+        background-color: white;
+        box-shadow: 0px 0px 5px 5px rgb(255, 213, 158)
+    }
+    to{
+        color: white;
+    }
 }
 #navbar a:hover{
     color: black;
     background-color: white;
+    animation-name: ahover;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    box-shadow: 0px 0px 5px 5px rgb(255, 213, 158);
+}
+@keyframes ahover{
+    from{
+        color: white;
+    }
+    to{
+        color: black;
+        background-color: white;
+        animation-fill-mode: forwards;
+        box-shadow: 0px 0px 5px 5px rgb(255, 213, 158);
+    }
 }
 #logo{
     display: inline;   
@@ -62,6 +89,7 @@ html{
     height: 244px;
     padding: 80px 100px;
     padding-bottom: 61px;
+    
 }
 #home::before{
     content: "";
@@ -95,18 +123,54 @@ html{
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
+    animation-name: homebuttonreverse;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
     
+}
+@keyframes homebuttonreverse {
+    from{
+        background-color: white;
+        color: #a10000;
+        width: 138px;
+        height: 45px;
+        font-size: 1.5rem;
+        box-shadow: 0px 0px 5px 5px #a10000;
+    }
+    to{
+        background-color: #a10000;
+        color: white;
+    }
 }
 #home button:hover{
     width: 118px;
     height: 41px;
-    border: 2px solid #a10000;
+    border: 2px solid white;
     border-radius: 13px;
-    background: white;
-    color: #a10000;
+    background:#a10000;
+    color:  white;
     font-size: 1.1rem;
     cursor: pointer;
+    animation-name: homebutton;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
+}
+
+@keyframes homebutton {
+    from{
+        background-color: #a10000;
+        color: white;
+    }
+    to{
+        background-color: white;
+        color: #a10000;
+        width: 138px;
+        height: 45px;
+        font-size: 1.5rem;
+        box-shadow: 0px 0px 5px 5px #a10000;
+    }
 }
 
 .body{
