@@ -115,12 +115,12 @@ html{
 }
 
 #home button{
-    width: 120px;
-    height: 40px;
+    width: 118px;
+    height: 41px;
     border: 2px solid white;
     border-radius: 13px;
     background: #a10000;
-    color: cyan;
+    color: white;
     font-size: 1.1rem;
     cursor: pointer;
     animation-name: homebuttonreverse;
